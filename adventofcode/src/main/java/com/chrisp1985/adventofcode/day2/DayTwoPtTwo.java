@@ -6,7 +6,7 @@ public class DayTwoPtTwo extends DayTwoPtOne {
 
 
     public void solution(String inputFilePath) {
-        List<int[]> foundInts = strArrToIntArray(getListOfStrings(inputFilePath));
+        List<int[]> foundInts = this.utils.strArrToIntArray(this.utils.getListOfStrings(inputFilePath));
         int count = 0;
         for(int i = 0; i < foundInts.size(); i++) {
             if(isArraySafe(foundInts.get(i))) {

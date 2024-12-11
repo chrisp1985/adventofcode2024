@@ -7,14 +7,8 @@ import java.util.List;
 
 public class DayOnePtOne extends BaseAbstract {
 
-    Utils utils;
-
     int[] l;
     int[] r;
-
-    public DayOnePtOne() {
-        this.utils = new Utils();
-    }
 
     public void solution(String inputFilePath) {
 
@@ -24,11 +18,11 @@ public class DayOnePtOne extends BaseAbstract {
     }
 
     protected void setSortedArrays(String inputFilePath) {
-        List<String[]> foundStrings = getListOfStrings(inputFilePath);
-        List<int[]> foundInts = strArrToIntArray(foundStrings);
+        List<String[]> foundStrings = this.utils.getListOfStrings(inputFilePath);
+        List<int[]> foundInts = this.utils.strArrToIntArray(foundStrings);
 
-        l = getArrayFromList(foundInts, 0);
-        r = getArrayFromList(foundInts, 1);
+        l = this.utils.getArrayFromList(foundInts, 0);
+        r = this.utils.getArrayFromList(foundInts, 1);
 
         Arrays.sort(l);
         Arrays.sort(r);
