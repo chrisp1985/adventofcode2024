@@ -114,4 +114,15 @@ public class Utils {
         }
         return res;
     }
+
+    public String[][] create2dArrayFromStringList(List<String> listArray) {
+        String[][] res = new String[listArray.size()][listArray.get(0).toCharArray().length];
+
+        for(int i=0; i < listArray.size(); i++) {
+            for(int j=0; j < listArray.get(i).toCharArray().length; j++) {
+                res[i][j] = String.valueOf(listArray.get(i).toCharArray()[j]);
+            }
+        }
+        return res;
+    }
 }

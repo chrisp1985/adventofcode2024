@@ -4,6 +4,10 @@ import com.chrisp1985.adventofcode.day1.DayOnePtOne;
 import com.chrisp1985.adventofcode.day1.DayOnePtTwo;
 import com.chrisp1985.adventofcode.day10.DayTen;
 import com.chrisp1985.adventofcode.day11.DayEleven;
+import com.chrisp1985.adventofcode.day12.DayTwelve;
+import com.chrisp1985.adventofcode.day14.DayFourteen;
+import com.chrisp1985.adventofcode.day15.DayFifteen;
+import com.chrisp1985.adventofcode.day16.DaySixteen;
 import com.chrisp1985.adventofcode.day2.DayTwoPtOne;
 import com.chrisp1985.adventofcode.day2.DayTwoPtTwo;
 import com.chrisp1985.adventofcode.day3.DayThreePtOne;
@@ -121,4 +125,24 @@ public class SolutionTest {
     public void dayElevenTest() {
         new DayEleven().solution("day11.txt");
     } // Recursion with Memo.
+
+    @Test
+    public void dayTwelveTest() {
+        new DayTwelve().solution("day12.txt");
+    }
+
+    @Test
+    public void dayFourteenTest() {
+        new DayFourteen().solution("day14.txt");
+    }
+
+    @Test
+    public void dayFifteenTest() {
+        new DayFifteen().solution("day15.txt");
+    }
+
+    @Test
+    public void daySixteenTest() {
+        new DaySixteen().solution("day16_sample.txt");
+    }
 }
